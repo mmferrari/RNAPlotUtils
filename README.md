@@ -1,7 +1,10 @@
 # RNAPlot Utils
+
 ### Description
 Various utilities for the RNAPlot program included into [ViennaRNA](https://github.com/ViennaRNA/ViennaRNA) suite.
-Right now it can convert an input file from Multistrand, DrTransformer or Kinwalker to an input file readable by RNAPlot.
+
+Right now it can convert an input file from [Multistrand](https://github.com/DNA-and-Natural-Algorithms-Group/multistrand), [DrTransformer](https://github.com/bad-ants-fleet/ribolands) or [Kinwalker](https://github.com/ViennaRNA/ViennaRNA) to a file readable by RNAPlot.
+
 
 ### Usage
 ```text
@@ -21,6 +24,5 @@ optional arguments:
 ```
 The output files will have the same name of the corresponding input file with the extension changed to `.vienna` )in the case of an input file without extension, it will be added).
 If a file named as the future output file already exists, it will be overwritten.
-
 
 **NOTE**: every input file will have its own corresponding output file, for example `python3 rnaplot_utils.py -i1 file1 -i2 file2` will generate two files `file1.vienna` and `file2.vienna`.
