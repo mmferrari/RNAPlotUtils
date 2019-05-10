@@ -194,6 +194,9 @@ class RNAPlotUtils:
 
                 sec_structs.append(found[0])
 
+        if len(sec_structs) > 0 and (len(sec_structs[0]) == len(sequence)):
+            del sec_structs[0]
+
         step_count = 0
         for sec_struct in sec_structs:
             step_count += 1
